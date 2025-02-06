@@ -34,12 +34,12 @@ class RestaurantMenu:
                 if dish_index == -1:
                     break
                 if dish_index < 0 or dish_index >= len(self.menu):
-                    print("Невірний номер страви. Спробуйте ще раз.")
+                    print("Невірний номер страви. Спробуйте ще.")
                     continue
                 total += self.menu[dish_index].price
                 print(f"Ви вибрали {self.menu[dish_index].name}. Поточна сума: {total} грн.")
             except ValueError:
-                print("Будь ласка, введіть правильний номер.")
+                print("Введіть правильний номер.")
         print(f"\nЗагальна сума вашого замовлення: {total} грн.")
 
 def main():
@@ -61,7 +61,7 @@ def main():
         elif choice == '3':
             restaurant.calculate_total()
         elif choice == '4':
-            print("До побачення!")
+            print("До побачення")
             break
         else:
             print("Невірний вибір. Спробуйте ще раз.")

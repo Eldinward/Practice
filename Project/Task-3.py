@@ -30,7 +30,7 @@ class RestaurantMenu:
         while True:
             self.show_menu()
             try:
-                dish_index = int(input("Виберіть страву за номером (1, 2, 3, ...), або введіть 0 для завершення: ")) - 1
+                dish_index = int(input("Виберіть страву за номером (1, 2, 3), або введіть 0 для завершення: ")) - 1
                 if dish_index == -1:
                     break
                 if dish_index < 0 or dish_index >= len(self.menu):

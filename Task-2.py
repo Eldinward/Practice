@@ -118,6 +118,6 @@ for i in range(n, 2 * n - 1):
 import textwrap
 
 text = "Це приклад тексту, який потрібно відформатувати."
-n = 60
+n = 50
 
 print("\n\n".join(textwrap.fill(para, n) for para in text.split("\n\n")))

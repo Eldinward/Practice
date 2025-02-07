@@ -20,7 +20,7 @@ for i in range(2, n):
 for row in triangle:
     print(row)
 
-#Завдання-Трете:
+#Завдання-Третє:
 
 n = 1000
 sieve = [True] * (n + 1)

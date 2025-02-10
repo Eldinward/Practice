@@ -34,7 +34,7 @@ for i in range(2, int(n**0.5) + 1):
 primes = [i for i in range(n + 1) if sieve[i]]
 print(primes)
 
-#Завдання-Чеверте:
+#Завдання-Четверте:
 
 n = int(input("Введіть число: "))
 factors = []
@@ -117,7 +117,7 @@ for i in range(n, 2 * n - 1):
 
 import textwrap
 
-text = "Це приклад тексту, який потрібно відформатувати."
+text = "В осини листя жотіє, скоро почнется зима."
 n = 50
 
 print("\n\n".join(textwrap.fill(para, n) for para in text.split("\n\n")))

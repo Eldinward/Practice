@@ -24,15 +24,13 @@ for row in triangle:
 
 n = 1000
 sieve = [True] * (n + 1)
-sieve[0] = sieve[1] = False
+sieve[:2] = [False, False]
 
-for i in range(2, int(n**0.5) + 1):
+for i in range(2, n + 1):
     if sieve[i]:
-        for j in range(i * i, n + 1, i):
-            sieve[j] = False
+        sieve[i * i : n + 1 : i] = [False] * len(range(i * i, n + 1, i))
 
-primes = [i for i in range(n + 1) if sieve[i]]
-print(primes)
+print([i for i, is_prime in enumerate(sieve) if is_prime])
 
 #Завдання-Четверте:
 
@@ -117,7 +115,10 @@ for i in range(n, 2 * n - 1):
 
 import textwrap
 
-text = "В осини листя жотіє, скоро почнется зима."
+text = "В осини листя жовтіє, скоро почнеться зима."
 n = 50
 
-print("\n\n".join(textwrap.fill(para, n) for para in text.split("\n\n")))
+paragraphs = text.split("\n\n")
+wrapped_text = "\n\n".join([textwrap.fill(para, n) for para in paragraphs])
+
+print(wrapped_text)

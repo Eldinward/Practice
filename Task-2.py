@@ -115,7 +115,7 @@ for i in range(n, 2 * n - 1):
 
 import textwrap
 
-text = "В осини листя жовтіє, скоро почнеться зима."
+text = "Восини листя жовтіє, скоро почнеться зима."
 n = 50
 
 paragraphs = text.split("\n\n")
